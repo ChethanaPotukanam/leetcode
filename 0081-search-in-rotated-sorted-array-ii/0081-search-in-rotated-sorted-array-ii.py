@@ -9,7 +9,7 @@ class Solution:
             if(nums[mid]==nums[f] and nums[mid]==nums[l]):
                 f+=1
                 l-=1
-            elif(nums[f]<nums[mid]):
+            elif(nums[f]<=nums[mid]):
                 if(target<=nums[mid] and target>=nums[f]):
                     l = mid-1
                 else:
